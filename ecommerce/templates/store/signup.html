@@ -1,0 +1,15 @@
+{%extends 'store/main.html'%}
+<!DOCTYPE html>
+{%load static%}
+
+{%block content%}
+<div class="container">
+  <h1>Signup to continue shopping</h1>
+  <form  method="post">
+    {{form.as_p}}
+    {%csrf_token%}
+    <input type="submit" class='btn btn-primary' name="" value="Signup">
+  </form>
+</div>
+
+{%endblock%}
